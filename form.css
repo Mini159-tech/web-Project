@@ -1,0 +1,120 @@
+/* === COLORS === */
+:root {
+  --primary-color: #111317;
+  --primary-light: #1f2125;
+  --primary-extra: #35373b;
+  --secondary: #f9ac54;
+  --secondary-dark: #d79447;
+  --white: #ffffff;
+  --text-light: #d1d5db;
+}
+
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === BODY === */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: var(--white);
+}
+
+/* === FORM HEADING === */
+h2 {
+  text-align: center;
+  color: var(--secondary);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* === FORM CONTAINER === */
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  background-color: var(--primary-light);
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid var(--primary-extra);
+  box-shadow: 0 0 20px rgba(249, 172, 84, 0.2);
+}
+
+/* === LABELS === */
+label {
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+/* === INPUT FIELDS === */
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  background-color: var(--primary-extra);
+  border: none;
+  border-radius: 6px;
+  color: var(--white);
+  outline: none;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+textarea {
+  height: 120px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid var(--secondary);
+}
+
+/* === RADIO BUTTONS === */
+input[type="radio"] {
+  accent-color: var(--secondary);
+  margin-right: 6px;
+  margin-top: 10px;
+}
+
+.radio-group {
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+/* === SUBMIT BUTTON === */
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--secondary);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--secondary-dark);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 480px) {
+  form {
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
