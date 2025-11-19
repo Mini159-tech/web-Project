@@ -7,38 +7,169 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Services</h2>
-    <hr>
+   <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">FITNESS GYM</a>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="service-image">
-        <img src="/personaltraining.png" alt="personal training icon">
-    </div>
-    <div class="service-box">
-    <div class="service-text">
-        <p>
-            Our certified personal trainers provide fully tailored workout programs designed to match your goals, body type, and fitness level. Each session focuses on proper technique, safety, and progressive improvement, ensuring you achieve sustainable results.
+    <div class="container">
+        <h1>Our Services</h1>
+        <p class="intro-text">
+            Explore our range of premium fitness services designed to help you achieve your health and wellness goals.
+            Whether you're starting your journey or aiming to level up, we provide expert support every step of the way.
         </p>
+
+
+        <div class="services-grid">
+
+
+            <div class="service-card">
+                <h3>Personal Training</h3>
+                <p>One-on-one training tailored to your fitness level, goals, and lifestyle. Our certified trainers
+                    guide you with proper techniques and personalized workout plans for maximum results.</p>
+            </div>
+
+
+            <div class="service-card">
+                <h3>Strength & Conditioning</h3>
+                <p>Boost power, endurance, and muscle strength through structured strength programs designed for both
+                    beginners and advanced athletes.</p>
+            </div>
+
+
+            <div class="service-card">
+                <h3>Cardio Training</h3>
+                <p>Improve stamina, burn calories, and enhance heart health through guided cardio sessions using modern
+                    and high-quality equipment.</p>
+            </div>
+
+
+            <div class="service-card">
+                <h3>Group Fitness Classes</h3>
+                <p>Stay motivated with fun and energetic group classes such as Zumba, HIIT, CrossFit, yoga, and more.
+                    Perfect for building consistency and enjoying fitness with others.</p>
+            </div>
+
+
+            <div class="service-card">
+                <h3>Nutrition & Diet Consultation</h3>
+                <p>Get personalized nutrition plans designed to complement your workouts and support your overall health
+                    goals. Learn what to eat and when for best performance.</p>
+            </div>
+
+
+            <div class="service-card">
+                <h3>Fitness Assessment</h3>
+                <p>Track your progress with regular fitness assessments including BMI check, posture analysis, strength
+                    tests, and expert recommendations.</p>
+            </div>
+        </div>
     </div>
 
-    <img src="/ChatGPT Image Nov 15, 2025, 03_25_16 PM.png" alt="Cardio" class="service_img s2">
-    <p>From high-performance treadmills to stationary bikes, rowing machines, and cross-trainers, our cardio area helps you improve stamina, burn calories, and support heart health. Members can choose from guided cardio sessions or self-paced workouts.</p>
+    <h1>Our certified trainers</h1>
+    <div class="slider-container">
+    <button class="prev-btn">&#10094;</button>
 
-    <img src="/strenghttraining.png" alt="strenghttraining" class="service_img s3">
-    <p>Our Strength & Conditioning zone features advanced equipment including free weights, resistance machines, and functional training tools. These programs enhance muscle strength, power, agility, and overall athletic performance for individuals of all fitness levels.</p>
+    <div class="slider">
+        <div class="card">
+            <div class="card-content">
+                <h3>Aarav Mehta</h3>
+                <h4>(Head Fitness Coach)</h4>
+                <img src="/Arav_Gymtrainer.png" alt="">
+                <p>Experience: 8+ Years</p>
+                <p>Specialties: Strength training, hypertrophy, fat loss transformation</p>
+                <p>Certifications: ACE Certified Personal Trainer, CPR & First Aid</p>
+                <p>Bio: Aarav is a highly experienced fitness coach known for helping clients achieve fast yet
+                    sustainable transformations.</p>
+            </div>
+        </div>
 
-    <img src="/grouptraining.png" alt="Group Training" class="service_img s4">
-    <p>We offer a variety of engaging group fitness classes designed to keep you motivated while training in a supportive environment. Popular sessions include:
+        <div class="card">
+            <div class="card-content">
+                <h3>Maya Kapoor</h3>
+                <h4>(Certified Yoga & Flexibility Coach)</h4>
+                <img src="/Maya_Gymtrainer.png" alt="">
+                <p>Experience: 6+ Years</p>
+                <p>Specialties: Yoga, Pilates, mobility improvement, stress relief</p>
+                <p>Certifications: RYT-500 Yoga Alliance</p>
+                <p>Bio: Maya creates a calm, balanced approach to fitness through yoga and mobility training.</p>
+            </div>
+        </div>
 
-Yoga & Meditation
+        <div class="card">
+            <div class="card-content">
+                <h3>Rohan Singh</h3>
+                <h4>(Strength & Conditioning Trainer)</h4>
+                <img src="/Rohan_Gymtrainer.png" alt="">
+                <p>Experience: 5+ Years</p>
+                <p>Specialties: Functional training, athletic conditioning, HIIT, agility</p>
+                <p>Certifications: NSCA Strength & Conditioning</p>
+                <p>Bio: Rohan brings high-energy, athlete-style training to the gym.</p>
+            </div>
+        </div>
 
-Zumba & Dance Fitness
+        <div class="card">
+            <div class="card-content">
+                <h3>Aisha Khan</h3>
+                <h4>(Nutrition & Weight Management Coach)</h4>
+                <img src="/Aisha_Gymtrainer.png" alt="">
+                <p>Experience: 4+ Years</p>
+                <p>Specialties: Weight loss, diet planning, holistic nutrition</p>
+                <p>Certifications: Certified Sports Nutritionist (ISSA)</p>
+                <p>Bio: Aisha helps clients through effective and balanced nutrition plans.</p>
+            </div>
+        </div>
+    </div>
 
-HIIT (High-Intensity Interval Training)
+    <button class="next-btn">&#10095;</button>
+</div>
+                    <script>
+                        const toggle = document.querySelector('.menu-toggle');
+                        const navLinks = document.querySelector('.nav-links');
 
-Aerobics
 
-Functional Circuit Training
+                        toggle.addEventListener('click', () => {
+                            navLinks.classList.toggle('active');
+                        });
+                    </script>
 
-These classes are led by experienced instructors to ensure a safe and enjoyable experience.</p>
+                    <script>
+    const slider = document.querySelector(".slider");
+    const nextBtn = document.querySelector(".next-btn");
+    const prevBtn = document.querySelector(".prev-btn");
+
+    let scrollAmount = 0;
+    const gap = 20;
+    const cardWidth = 300 + gap;
+
+    const totalCards = slider.children.length;
+    const maxScroll = (totalCards * cardWidth) - cardWidth;
+
+    nextBtn.addEventListener("click", () => {
+        scrollAmount += cardWidth;
+
+        if (scrollAmount > maxScroll) {
+            scrollAmount = 0;
+        }
+
+        slider.style.transform = `translateX(-${scrollAmount}px)`;
+    });
+
+    prevBtn.addEventListener("click", () => {
+        scrollAmount -= cardWidth;
+
+        if (scrollAmount < 0) {
+            scrollAmount = maxScroll;
+        }
+
+        slider.style.transform = `translateX(-${scrollAmount}px)`;
+    });
+</script>
 </body>
+
 </html>
