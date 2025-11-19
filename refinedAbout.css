@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111317;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.about-container {
+  width: 85%;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  text-decoration: underline orange;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.block.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+.image {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  border: 2px solid orange;
+}
+
+blockquote {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: orange;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.my-button {
+  padding: 15px 32px;
+  font-size: 18px;
+  border: 3px solid orange;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.my-button:hover {
+  background-color: orange;
+  color: #111317;
+}
+
+@media only screen and (max-width: 768px) {
+  .block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .text {
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
