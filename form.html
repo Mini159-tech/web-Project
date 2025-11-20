@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>REGESTRATION FORM</h2>
-    <form action="Thankyou.html" method="post">
+    <form action="Thankyou.html" method="get">
         <label for="full name">Full Name</label><br>
         <input type="text" id="full name" name="name" placeholder="Enter your full name" required><br><br>
 
@@ -16,8 +16,8 @@
         <input type="date" id="dob" name="dob" required><br><br>
 
         <label for="gender">Gender</label><br>
-        <input type="radio" id="Male" value="Male" required>Male<br>
-        <input type="radio" id="Female" value="Female" required>Female<br><br>
+        <input type="radio" name="gender" value="Male">Male<br>
+        <input type="radio" name="gender" value="Female">Female<br><br>
 
         <label for="phone number">Phone Number</label><br>
         <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your 10 digit phone number" required><br><br>
@@ -35,14 +35,14 @@
         <input type="radio" id="genral fitness" value="Genral Fitness" required>Genral Fitness<br><br>
 
         <label for=" Preferred Workout Time"> Preferred Workout Time</label><br>
-        <input type="radio" id="morning" value="morning"required>Morning<br>
-        <input type="radio" id="afternoon" value="afternoon"required>afternoon<br>
-        <input type="radio" id="evening" value="evening"required>Evening<br><br>
+        <input type="radio" id="morning" value="morning" name=" Preferred Workout Time" required>Morning<br>
+        <input type="radio" id="afternoon" value="afternoon" name=" Preferred Workout Time" required>afternoon<br>
+        <input type="radio" id="evening" value="evening" name=" Preferred Workout Time" required>Evening<br><br>
         
         <label for="Trainer Preference">Trainer Preference</label><br>
-        <input type="radio" id="male" value="male" required>Male<br>
-        <input type="radio" id="female" value="female" required>Female<br>
-        <input type="radio" id="no preference" value="no preference" required>No Preference<br><br>
+        <input type="radio" id="male" value="male" name="Trainer Preference" required>Male<br>
+        <input type="radio" id="female" value="female" name="Trainer Preference" required>Female<br>
+        <input type="radio" id="no preference" value="no preference" name="Trainer Preference" required>No Preference<br><br>
 
         <label for="photo">Upload photo for gym id</label><br>
         <input type="file" id="photo" name="photo" accept=".jpg" required><br><br>
@@ -54,6 +54,7 @@
 </body>
 
 </html>
+
 
 
 
