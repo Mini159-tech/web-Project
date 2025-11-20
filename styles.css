@@ -116,46 +116,6 @@ nav {
   width: 50%;
 }
 
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  color: var(--white);
-  cursor: pointer;
-}
-
-/* MOBILE NAVIGATION */
-@media (max-width: 900px) {
-  .hamburger {
-    display: block;
-  }
-
-  .nav {
-    position: relative;
-  }
-
-  .nav__links, .nav__btn {
-    display: none;
-  }
-
-  /* When active */
-  .nav__links.active {
-    display: flex;
-    flex-direction: column;
-    background: var(--primary-color-light);
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 250px;
-    padding: 1.5rem;
-    gap: 1.2rem;
-    border-radius: 0 0 10px 10px;
-  }
-
-  .nav__btn {
-    display: none;
-  }
-}
-
 .header__container {
   position: relative;
   padding-top: 2rem;
@@ -682,4 +642,5 @@ nav {
     text-align: center;
   }
 }
+
 
