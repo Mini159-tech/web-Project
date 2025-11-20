@@ -129,7 +129,7 @@ nav {
     display: block;
   }
 
-  nav {
+  .nav {
     position: relative;
   }
 
@@ -682,3 +682,4 @@ nav {
     text-align: center;
   }
 }
+
