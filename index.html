@@ -22,12 +22,7 @@
     <li class="link"><a href="memb.html">Membership</a></li>
   </ul>
 
-  <button class="btn nav__btn"><a href="/form.html">Join Now</a></button>
-
-  
-  <div class="hamburger" id="hamburger">
-    <i class="ri-menu-line"></i>
-  </div>
+  <button class="btn nav__btn"><a href="form.html">Join Now</a></button>
 </nav>
 
     <header class="section__container header__container">
@@ -274,20 +269,7 @@ document.getElementById("date").innerText = new Date().toLocaleDateString();
     <div class="footer__bar">
       Copyright © 2023 Web Design Mastery. All rights reserved.
     </div>
-
-    <script>
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("navLinks");
-
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-
-    // Change hamburger icon
-    hamburger.innerHTML = navLinks.classList.contains("active")
-      ? '<i class="ri-close-line"></i>'
-      : '<i class="ri-menu-line"></i>';
-  });
-</script>
   </body>
 </html>
+
 
