@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>REGESTRATION FORM</h2>
-    <form action="Thankyou.html" method="get">
+    <form action="Thankyou.html">
         <label for="full name">Full Name</label><br>
         <input type="text" id="full name" name="name" placeholder="Enter your full name" required><br><br>
 
@@ -28,33 +28,29 @@
         <label for="address">Address</label><br>
         <textarea type="address" id="address" rows="10" placeholder="Enter yoyr full address" required></textarea><br><br>
 
-        <label for="fitness goal">Fitness Goal</label><br>
-        <input type="radio" id="weight loss" value="Weight Loss" required>Weight Loss<br>
-        <input type="radio" id="muscle gain" value="Muscle Gain" required>Muscle Gain<br>
-        <input type="radio" id="strength" value="Strength" required>Strength<br>
-        <input type="radio" id="genral fitness" value="Genral Fitness" required>Genral Fitness<br><br>
+        <label for="goal">Fitness Goal</label><br>
+        <input type="radio" name="goal" value="Weight Loss" required> Weight Loss<br>
+        <input type="radio" name="goal" value="Muscle Gain" required> Muscle Gain<br>
+        <input type="radio" name="goal" value="Strength" required> Strength<br>
+        <input type="radio" name="goal" value="General Fitness" required> General Fitness<br>
 
-        <label for=" Preferred Workout Time"> Preferred Workout Time</label><br>
-        <input type="radio" id="morning" value="morning" name=" Preferred Workout Time" required>Morning<br>
-        <input type="radio" id="afternoon" value="afternoon" name=" Preferred Workout Time" required>afternoon<br>
-        <input type="radio" id="evening" value="evening" name=" Preferred Workout Time" required>Evening<br><br>
+
+        <label for="workout"> Preferred Workout Time</label><br>
+        <input type="radio" name="workout" value="Morning" required> Morning<br>
+        <input type="radio" name="workout" value="Afternoon" required> Afternoon<br>
+        <input type="radio" name="workout" value="Evening" required> Evening<br>
+
         
-        <label for="Trainer Preference">Trainer Preference</label><br>
-        <input type="radio" id="male" value="male" name="Trainer Preference" required>Male<br>
-        <input type="radio" id="female" value="female" name="Trainer Preference" required>Female<br>
-        <input type="radio" id="no preference" value="no preference" name="Trainer Preference" required>No Preference<br><br>
+        <label for="trainer">Trainer Preference</label><br>
+        <input type="radio" name="trainer" value="Male" required> Male<br>
+        <input type="radio" name="trainer" value="Female" required> Female<br>
+        <input type="radio" name="trainer" value="No Preference" required> No Preference<br>
+    
 
         <label for="photo">Upload photo for gym id</label><br>
-        <input type="file" id="photo" name="photo" accept=".jpg" required><br><br>
+        <input type="file" id="photo" name="photo" accept=".jpg"><br><br>
 
-        <input type="submit" value="Register">
-        
-        
+        <input type="submit" value="Register">   
     </form>
 </body>
-
 </html>
-
-
-
-
